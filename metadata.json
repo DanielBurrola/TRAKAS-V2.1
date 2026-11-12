@@ -1,0 +1,8 @@
+{
+  "name": "Remix ZOLL Serie M - Simulador Clínico de Monitor Desfibrilador",
+  "description": "Simulador médico profesional de monitor desfibrilador ZOLL Serie M para entrenamiento clínico de alto nivel en prehospitalaria y enfermería bajo directrices AHA/ERC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

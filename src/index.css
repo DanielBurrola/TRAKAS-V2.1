@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-lcd: 'Chakra Petch', 'JetBrains Mono', monospace;
+  }
+}
+
+.font-lcd {
+  font-family: var(--font-lcd);
+}
+
+/* Medical ECG Paper Grid Background */
+.ecg-grid-dark {
+  background-color: #030704;
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(16, 185, 129, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.22) 1px, transparent 1px);
+  background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+}
+
+.ecg-paper-pink {
+  background-color: #ffeef0;
+  background-image: 
+    linear-gradient(to right, rgba(239, 68, 68, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(239, 68, 68, 0.15) 1px, transparent 1px),
+    linear-gradient(to right, rgba(239, 68, 68, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(239, 68, 68, 0.35) 1px, transparent 1px);
+  background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+}
+
+/* Subtle medical monitor CRT scanline texture */
+.crt-overlay {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Phosphor Glow */
+.glow-ecg {
+  filter: drop-shadow(0 0 2px rgba(52, 211, 153, 0.7));
+}
+
+.glow-pleth {
+  filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.7));
+}
+
+.glow-co2 {
+  filter: drop-shadow(0 0 2px rgba(250, 204, 21, 0.7));
+}
